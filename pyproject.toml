@@ -1,17 +1,15 @@
-[project]
+[tool.poetry]
 name = "dice-roller"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "denizozkaymak",email = "denizgokalp.5@gmail.com"}
-]
+authors = ["denizozkaymak <denizgokalp.5@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "flask (>=3.1.0,<4.0.0)",
-    "pytest (>=8.3.4,<9.0.0)"
-]
+packages = [{include = "dice_roller"}]
 
+[tool.poetry.dependencies]
+python = ">=3.12"
+flask = ">=3.1.0,<4.0.0"
+pytest = ">=8.3.4,<9.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
